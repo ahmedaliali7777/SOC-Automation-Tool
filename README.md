@@ -50,12 +50,16 @@ The tool optimizes security workflows by performing local static analysis, query
            ├── Terminate Suspicious Running Processes
            └── Generate Forensic Incident Report Document (.txt)
 🛠️ Installation & Setup
-1. Prerequisites
+ 1. Install Dependencies
+Easily install all required libraries using the provided requirements file:
+```bash
+pip install -r requirements.txt
+2. Prerequisites
 Ensure you have Python 3.x installed along with the requests library.
 
 Bash
 pip install requests
-2. Configure API Keys
+3. Configure API Keys
 Open analyzer.py and input your personal API keys at the top of the file:
 
 Python
@@ -63,7 +67,7 @@ VT_API_KEY = "YOUR_VIRUSTOTAL_API_KEY"
 ABUSE_API_KEY = "YOUR_ABUSEIPDB_API_KEY"
 OTX_API_KEY = "YOUR_ALIENVAULT_OTX_API_KEY"
 HYBRID_ANALYSIS_API_KEY = "YOUR_HYBRID_ANALYSIS_API_KEY"
-3. Usage
+4. Usage
 Run the tool and supply the absolute path of the target binary/artifact:
 
 Bash
